@@ -1,0 +1,71 @@
+/* Base Style */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+	text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+	color: grey;
+	text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+	margin: auto;
+}
+
+.top {
+	text-transform: uppercase;
+	float: right;
+}
+
+.mobile-bottom {
+	font-weight: bold;
+}
+
+.profile-pic {
+	width: 80%;
+	display: block;
+}
+
+.name {
+	text-align: center;
+	margin top: 20px;
+	margin-bottom: 30px;
+}
+
+.main-nav li {
+	text-align:center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.main-nav {
+	text-transform: uppercase;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
