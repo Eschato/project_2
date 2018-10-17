@@ -122,12 +122,89 @@ img {
 	font-weight: 700;
 }
 
+
 /* Media Queries */
 
 @media (min-width: 768px) {
+	.name,
+	.main-nav li {
+		display: inline-block;
+	}
 
+	.name {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	ul {
+		text-align: center;
+	}
+
+	li {
+		padding: 0 15px;
+	}
+
+	.profile-pic {
+		 max-width: 40%;
+		 height: auto;
+		 margin: auto;
+		 float: right;
+		 padding-left: .7em;
+		 padding-right: .7em;
+	}
+
+	.intro p {
+		text-align: left;
+	}
+
+	.primary-col,
+	.secondary-col {
+		width: 50%;
+	}
+
+	.primary-col {
+		float: left;
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+	.secondary-col {
+		float: right;
+		padding-left: .5em;
+		padding-right: .5em;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#correction1 {
+		margin-bottom: 2.2em;
+	}
+
+	#correction2 {
+		margin-bottom: 2.2em;
+	}
 }
 
+	._top {
+		display: none;
+	}
+
+@media (min-width: 793px) {
+	#correction1 {
+		margin-bottom: 19px;
+	}
+}
+
+@media (min-width: 854px) {
+	#correction2 {
+		margin-bottom: 19px;
+	}
+}
+
+	}
 @media (min-width: 1024px) {
 
 }
