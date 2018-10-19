@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile-first Responsive Layout</title>
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -12,11 +13,12 @@
     <div class="main-wrapper">
       <header>
         <h1 class="name">Adam Fajder</h1>
-        <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav class="main-nav">
+          <a href="#">Home</a> |
+          <a href="#portfolio">Portfolio</a> |
+          <a href="#contact">Contact</a> |
+          <a href="#skills">Skills</a>
+        </nav>
       </header>
       <main>
         <div class="intro">
@@ -54,22 +56,30 @@
           <h3>Calculator</h3>
           <p>Someone can enter in numbers they want, and press the big béue button and get the results.</p>
         </div>
+
+        <div class="skills">
+          <h3 id="skills">Skills</h3>
+          <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img class="icon" src="images/HTML5_Logo_256.ico" alt="HTML5 logo"></a>
+          <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3" target="_blank"><img class="icon" src="images/CSS3_Logo_256.png" alt="CSS3 logo"></a>
+        </div>
+
         <div class="contact">
           <h2 id="contact">Contact</h2>
           <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
           <p>Phone <span class="phone">+1 (111) 555-1234</span></p>
-          <p>Email <a href="mailto:fajder@gmail.com?Subject=Hello!%I%want%to%hire%you!" target="_top">fajder@gmail.com</a></p>
+          <p>Email <a href="mailto:fajder@gmail.com?Subject=Hello!%20I%20want%20to%20hire%20you!" target="_top">fajder@gmail.com</a></p>
         </div>
       </main>
       <footer>
         <div class="mobile-bottom">
           <span class="bottom-name">Adam Fajder</span>
           <span class="top"><a href="#">Back to top</a></span>
-          <ul class="bottom-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <nav class="bottom-nav">
+            <a href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+          </nav>
         </div>
       </footer>
     </div>
