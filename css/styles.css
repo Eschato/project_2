@@ -79,7 +79,7 @@ img {
 
 .name {
 	text-align: center;
-	margin top: 20px;
+	margin-top: 20px;
 	margin-bottom: 45px;
 	color: #3a2f24;
 	font-weight: 700;
@@ -122,13 +122,14 @@ img {
 	font-weight: 700;
 }
 
-.tablet-bottom {
-	display: none;
-}
 
 ul {
   list-style: none;
 	padding: 0;
+}
+
+.bottom-nav {
+	display: none;
 }
 
 /* Media Queries */
@@ -137,6 +138,10 @@ ul {
 	.name,
 	.main-nav li {
 		display: inline-block;
+	}
+
+	#portfolio {
+		margin-top: 120px;
 	}
 
 	.name {
@@ -165,20 +170,76 @@ ul {
 		text-align: left;
 	}
 
-	.primary-col,
-	.secondary-col {
-		width: 50%;
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 
-	.primary-col {
-		float: left;
-		padding-left: .5em;
-		padding-right: .5em;
+	.top {
+		display: none;
 	}
-	.secondary-col {
+
+	.bottom-nav {
+		display: inline-block;
 		float: right;
-		padding-left: .5em;
-		padding-right: .5em;
+		margin-top: 0;
+	}
+
+	.bottom-nav li {
+		display: inline-block;
+	}
+
+	.col {
+		float: left;
+		width: 50%;
+		padding: 10px;
+	}
+
+	#contact {
+		margin-top: 1350px;
+		margin-bottom: 0;
+	}
+
+	.contact p {
+		padding: 0 15%;
+		text-align: center;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	.intro p {
+		max-width: 60%;
+	}
+
+	#portfolio {
+		margin-top: 230px;
+	}
+
+	.bottom-nav {
+		display: inline-block;
+		float: right;
+		margin-top: 0;
+	}
+
+	.bottom-nav li {
+		display: inline-block;
+	}
+
+	.main-nav {
+		float: right;
+		margin-top: 55px;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+
+	.col {
+		float: left;
+		width: 33.33%;
+		padding: 10px;
 	}
 
 	.clearfix::after {
@@ -187,43 +248,18 @@ ul {
 		clear: both;
 	}
 
-	#correction1 {
-		margin-bottom: 2.2em;
+	#contact {
+		margin-top: 900px;
+		margin-bottom: 0;
 	}
 
-	#correction2 {
-		margin-bottom: 2.2em;
+	.contact p {
+		padding: 0 15%;
+		text-align: center;
 	}
 
-	.top {
-		display: none;
+	.name {
+		width: auto;
 	}
-
-	.tablet-bottom,
-	.tablet-bottom li {
-		display: inline-block;
-	}
-
-	#tablet-bottom {
-		padding-left: 0;
-		float: right;
-	}
-}
-
-
-@media (min-width: 793px) {
-	#correction1 {
-		margin-bottom: 19px;
-	}
-}
-
-@media (min-width: 854px) {
-	#correction2 {
-		margin-bottom: 19px;
-	}
-}
-
-	}
-@media (min-width: 1024px) {
 
 }
