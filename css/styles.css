@@ -18,6 +18,7 @@
 .intro p {
 	font-size: 1.25em;
 	line-height: 1.5;
+	font-family: 'Archivo Narrow', sans-serif;
 }
 
 h2 {
@@ -85,7 +86,7 @@ img {
 	font-weight: 700;
 }
 
-.main-nav li {
+.main-nav  {
 	text-align:center;
 	margin-bottom: 40px;
 	color: #3a2f24;
@@ -97,7 +98,7 @@ img {
 }
 
 .contact {
-	margin-top: 150px;
+	margin-top: 50px;
 	margin-bottom: 100px;
 }
 
@@ -132,11 +133,22 @@ ul {
 	display: none;
 }
 
+.icon {
+	display: block;
+	 max-width: 10%;
+	 height: auto;
+	 margin: auto;
+}
+
+.skills h3 {
+	margin-top: 80px;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
 	.name,
-	.main-nav li {
+	.main-nav a {
 		display: inline-block;
 	}
 
@@ -153,9 +165,14 @@ ul {
 		text-align: center;
 	}
 
-	li {
+	a {
 		padding: 0 15px;
 	}
+
+	a:hover {
+		color: lightgrey;
+	}
+
 
 	.profile-pic {
 		 max-width: 40%;
@@ -196,14 +213,13 @@ ul {
 		padding: 10px;
 	}
 
-	#contact {
-		margin-top: 1350px;
-		margin-bottom: 0;
-	}
-
 	.contact p {
 		padding: 0 15%;
 		text-align: center;
+	}
+
+	.skills h3 {
+		margin-top: 1250px;
 	}
 
 }
@@ -249,8 +265,12 @@ ul {
 	}
 
 	#contact {
-		margin-top: 900px;
+		margin-top: 50px;
 		margin-bottom: 0;
+	}
+
+	.skills h3 {
+		margin-top: 900px;
 	}
 
 	.contact p {
