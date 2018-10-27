@@ -5,6 +5,16 @@
 	font-family: 'Rubik', sans-serif;
 }
 
+.name,
+.main-nav a {
+	display: block;
+	margin-top: 15px;
+}
+
+a:hover {
+	color: lightgrey;
+}
+
 .main-wrapper {
   width: 90%;
   margin: 0 auto;
@@ -161,16 +171,8 @@ ul {
 		margin-top: 40px;
 	}
 
-	ul {
-		text-align: center;
-	}
-
 	a {
 		padding: 0 15px;
-	}
-
-	a:hover {
-		color: lightgrey;
 	}
 
 
@@ -229,6 +231,12 @@ ul {
 		max-width: 60%;
 	}
 
+	.name,
+	.main-nav a {
+		display: inline-block;
+	}
+
+
 	#portfolio {
 		margin-top: 230px;
 	}
@@ -246,10 +254,6 @@ ul {
 	.main-nav {
 		float: right;
 		margin-top: 55px;
-	}
-
-	.main-nav li {
-		display: inline-block;
 	}
 
 	.col {
